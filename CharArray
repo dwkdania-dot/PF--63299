@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char arr[8] = {'L','O','N','E','R','S','!','!'};
+    for(int i = 0; i < 8; i++) {
+        cout << "The characters in the array: " << arr[i] << endl;
+    }
+    return 0;
+}   
