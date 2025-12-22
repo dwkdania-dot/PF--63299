@@ -11,7 +11,7 @@ int main() {
     
     int arr[row][col];
     
-    cout << "Enter all the elements in the matrix:" << endl;
+    cout << "Enter all the elements in the matrix:";
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             cout << "Enter value for arr[" << i << "][" << j << "]: ";
@@ -19,8 +19,7 @@ int main() {
         }
     }
     
-    // Simple reverse: just print backwards!
-    cout << "Reversed 2D Array:" << endl;
+    cout << "Reversed 2D Array:";
     for (int i = row - 1; i >= 0; i--) {
         for (int j = col - 1; j >= 0; j--) {
             cout << arr[i][j] << " ";
