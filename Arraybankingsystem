@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double balance[5] = {1000, 500, 750, 1200, 300};
+    int choice, account;
+    double amount;
+    
+    cout << "Banking System\n\n";
+    
+    cout << "1. Check Balance\n";
+    cout << "2. Deposit\n";
+    cout << "3. Withdraw\n";
+    cout << "4. Show All\n";
+    cout << "Enter choice: ";
+    cin >> choice;
+    
+    if(choice == 1) {
+        cout << "Enter account (0-4): ";
+        cin >> account;
+        cout << "Balance: " << balance[account];
+    }
+    else if(choice == 2) {
+        cout << "Enter account (0-4): ";
+        cin >> account;
+        cout << "Enter amount: ";
+        cin >> amount;
+        balance[account] = balance[account] + amount;
+        cout << "New balance: " << balance[account] << endl;
+    }
+    else if(choice == 3) {
+        cout << "Enter account (0-4): ";
+        cin >> account;
+        cout << "Enter amount: ";
+        cin >> amount;
+        balance[account] = balance[account] - amount;
+        cout << "New balance: " << balance[account];
+    }
+    else if(choice == 4) {
+        for(int i = 0; i < 5; i++) {
+            cout << "Account " << i << ": " << balance[i];
+        }
+    }
+    
+    return 0;
+}
