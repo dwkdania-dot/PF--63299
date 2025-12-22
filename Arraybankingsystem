@@ -26,7 +26,7 @@ int main() {
         cout << "Enter amount: ";
         cin >> amount;
         balance[account] = balance[account] + amount;
-        cout << "New balance: " << balance[account] << endl;
+        cout << "New balance: " << balance[account];
     }
     else if(choice == 3) {
         cout << "Enter account (0-4): ";
